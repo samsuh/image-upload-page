@@ -1,32 +1,48 @@
 <head>
-  <link rel=stylesheet href="css/styles.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="js/index.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="js/index.js"></script>
 </head>
 
 <body>
-<div>
-  <div>logo goes here</div>
-  <div>navbar goes here</div>
+	<div class="nav-wrapper">
+		<div class="grad-bar"></div>
+		<nav class="navbar">
+			<img src="https://uploads-ssl.webflow.com/5b3e9b55cbb56a0d25e863ce/5b403e3fe9a78845d83f416c_archon_wide-p-500.png" alt="Archon Logo">
+			<div class="menu-toggle" id="mobile-menu">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</div>
+			<ul class="nav no-search">
+				<li class="nav-item"><a href="#">Home</a></li>
+				<li class="nav-item"><a href="#">About</a></li>
+				<li class="nav-item"><a href="#">Work</a></li>
+				<li class="nav-item"><a href="#">Careers</a></li>
+				<li class="nav-item"><a href="#">Contact Us</a></li>
+			</ul>
+		</nav>
+	</div>
 
-</div>
+	<div class="file-upload page-wrapper">
+		<button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button>
+		<div class="image-upload-wrap">
+			<input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+			<div class="drag-text">
+				<h3>Drag and drop here<br>or<br> click to add image</h3>
+			</div>
+		</div>
+		<div class="file-upload-content">
+			<img class="file-upload-image" src="#" alt="your image" />
+			<div class="image-title-wrap">
+				<button type="button" onclick="upload();" class="add-image">Confirm<br><span class="image-title">Uploaded Image</span></button>
+				<button type="button" onclick="removeUpload()" class="remove-image">Cancel<br><span class="image-title">Uploaded Image</span></button>
+			</div>
+		</div>
+	</div>
 
-  <div class="file-upload">
-    <!-- <button class="file-upload-btn" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button> -->
-    <div class="image-upload-wrap">
-      <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
-      <div class="drag-text">
-        <h3>Drag and drop here<br>or<br> click to add image</h3>
-      </div>
-    </div>
-    <div class="file-upload-content">
-      <img class="file-upload-image" src="#" alt="your image" />
-      <div class="image-title-wrap">
-        <button type="button" onclick="upload();" class="add-image">Confirm<br><span class="image-title">Uploaded Image</span></button>
-        <button type="button" onclick="removeUpload()" class="remove-image">Cancel<br><span class="image-title">Uploaded Image</span></button>
-      </div>
-    </div>
-  </div>
+	<div>footer goes here</div>
+	<div class="grad-bar"></div>
 </body>
-
-<div>footer goes here</div>
