@@ -238,7 +238,7 @@ h2 {
 /* FOOTER */
 .footer-left {
   display: inline-block;
-  padding-left: 20px;
+  padding: 20px;
   width: 40%;
   font-size: 1rem;
   position: absolute;
@@ -248,7 +248,7 @@ h2 {
 .footer-right {
   display: inline-block;
   text-align: right;
-  padding-right: 20px;
+  padding: 20px;
   width: 60%;
   position: absolute;
   right: 0;
